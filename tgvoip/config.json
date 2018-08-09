@@ -1,0 +1,34 @@
+{
+  "name": "Telegram VOIP MQTT",
+  "version": "1",
+  "slug": "tgvoip",
+  "description": "Telegram Voip calls",
+  "startup": "application",
+  "boot": "auto",
+  "ports": {
+    "20000/udp": 20000
+  },
+  "audio": true,
+  "arch": [
+    "armhf",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "options": {
+    "api_id": "",
+    "api_hash": "",
+    "phone":  "",
+    "database_key": "",
+    "data_dir": "/data/telegram",
+    "mqtt_server": ""
+  },
+  "schema": {
+      "api_id": "str",
+      "api_hash": "str",
+      "phone":  "str",
+      "database_key": "str",
+      "data_dir": "str",
+      "mqtt_server": "str"
+  }
+}

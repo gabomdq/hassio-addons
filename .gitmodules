@@ -1,0 +1,3 @@
+[submodule "tgvoip/cross-compile/armv7hf-alpine-qemu"]
+	path = tgvoip/cross-compile/armv7hf-alpine-qemu
+	url = https://github.com/schmich/armv7hf-alpine-qemu.git
