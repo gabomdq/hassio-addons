@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 CONFIG_PATH=/data/options.json
 KEY_PATH=/data/ssh_keys
@@ -50,10 +49,14 @@ ssh-keyscan -p $SSH_PORT $HOSTNAME || true
 
 command_args="${command_args} ${OTHER_SSH_OPTIONS}"
 
-echo "[INFO] command args: ${command_args}"
+echo "[INFO] launching autossh"
+
 # start autossh
 while true
 do
+    date
+    echo "[INFO] command args: ${command_args}"
     /usr/bin/autossh ${command_args}
+    echo "[INFO] autossh aborted"
     sleep 5
 done

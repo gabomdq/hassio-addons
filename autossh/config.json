@@ -1,9 +1,9 @@
 {
   "name": "Autossh",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "slug": "autossh",
   "description": "Automatically connect to a ssh server for forwarding ports",
-  "url": "https://github.com/odinuge/hassio-addons",
+  "url": "https://github.com/gabomdq/hassio-addons",
   "startup": "application",
   "boot": "auto",
   "map": ["config:rw"],
@@ -24,6 +24,5 @@
     "local_forwarding": ["str"],
     "other_ssh_options": "str",
     "monitor_port": "int"
-  },
-  "image": "odinuge/hassio-addon-autossh-{arch}"
+  }
 }
