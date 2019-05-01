@@ -7,6 +7,13 @@
   "startup": "application",
   "boot": "auto",
   "map": ["config:rw"],
+  "arch": [
+    "armhf",
+    "aarch64",
+    "armv7",
+    "amd64",
+    "i386"
+  ],
   "options": {
     "hostname": "",
     "ssh_port": "22",
